@@ -1,0 +1,89 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<body style="background-color:lightpink;">
+<p><h1 align="center">LAVISHLY GLORIFIED HOMES </h1></p>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">HOME</a>
+  <a href="#Images" class="w3-button w3-bar-item">ABOUT</a>
+  <a href="#" class="w3-button w3-bar-item">ITEMS</a>
+  <a href="#contact" class="w3-button w3-bar-item">CONTACT</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="img\homedecor.jpeg"
+  style="width:50%">
+  <img class="mySlides" src="img\artful.jpeg"
+  style="width:50%">
+  <img class="mySlides" src="img\sofa.jpeg"
+  style="width:50%">
+</section>
+
+<!-- Home decor website Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">ELEGANT AURA HOMES</h2>
+  <p class="w3-opacity"><i>WE LOVE TO BEAUTIFY YOUR HOME</i></p>
+  <p class="w3-justify">We have created a fictional Home Decor website to enhance the allurance of your home because your wife is a home-maker and our products are home raiser which will raise the aura of your homes by their exquisite looks.</p>
+</section>
+
+<!-- Home Decors Items -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>Enchanting birds</p>
+    <img src="img\birds.jpeg" style="width:25%">
+   
+  </article>
+  <article class="w3-third">
+    <p>Heart shape lamp</p>
+    <img src="img\heart.jpeg"style="width:25%">
+   
+  </article>
+  <article class="w3-third">
+    <p>Dancing Ladies</p>
+    <img src="img\girls.jpeg" alt="Random Name" style="width:"50%">
+   
+  </article>
+</section>
+
+<script>
+// Automatic Slideshow - change image every 2 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>We offer full-service of decorations for any kind of place. We understand your needs and we will provide the best items to satisfy the biggeest criteria of them all, both look and material. Do not hesitate to contact us.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Elegant homes, 45A, vista residency, kharar</b></p>
+    <p>You can also contact us by phone 00553123-2323 or email eleganthomes@homedecor.com, or you can send us a message here:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="Email id" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Place orders" required name="orders" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Feedback" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+</body>
+</html>
